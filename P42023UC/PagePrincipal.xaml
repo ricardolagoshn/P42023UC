@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="P42023UC.PagePrincipal">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Label Text="Pagina Clientes!"/>
+
+            <Entry x:Name="txtnombre" Placeholder="Ingrese su nombre" Keyboard="Text" />
+
+            <Entry x:Name="txtapellido" Placeholder="Ingrese su apellido" Keyboard="Text" />
+
+            <Button x:Name="btnprocesar" Text="Procesar" Clicked="btnprocesar_Clicked" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
