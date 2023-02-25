@@ -12,6 +12,10 @@
             <Entry x:Name="txtapellido" Placeholder="Ingrese su apellido" Keyboard="Text" />
 
             <Button x:Name="btnprocesar" Text="Procesar" Clicked="btnprocesar_Clicked" />
+            
+            
+            
+    
 
         </StackLayout>
     </ContentPage.Content>
