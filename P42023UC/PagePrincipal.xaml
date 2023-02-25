@@ -13,10 +13,6 @@
 
             <Button x:Name="btnprocesar" Text="Procesar" Clicked="btnprocesar_Clicked" />
             
-            
-            
-    
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

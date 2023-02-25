@@ -1,4 +1,4 @@
-﻿using P42023UC.NewFolder;
+﻿using P42023UC.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,15 +18,21 @@ namespace P42023UC
 			InitializeComponent ();
 		}
 
-        private void btnprocesar_Clicked(object sender, EventArgs e)
+        private async void btnprocesar_Clicked(object sender, EventArgs e)
         {
 			var emple = new Empleado
 			{
-				id = 1,
 				nombres = txtnombre.Text,
 				apellidos = txtapellido.Text,
 				foto = null
 			};
+
+
+			if (await App.Database.SaveEmple(emple) > 0)
+			{
+				await DisplayAlert("Ingresado", "Empleado Ingresado con exito", "OK");
+			}
+
 
 			// esto es para llamar una seguna pagina y pasarle parametro a una seguna pantalla
 			var secondpage = new PageResultado();
